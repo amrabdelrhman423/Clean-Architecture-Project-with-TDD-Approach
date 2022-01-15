@@ -1,0 +1,49 @@
+name: tdd
+description: Clean Architecture Project with TDD Approach.
+
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  # Service locator
+  get_it:
+  # Bloc for state management
+  flutter_bloc: ^6.1.3
+  # Value equality
+  equatable: ^0.4.0
+  # Functional programming thingies
+  dartz: ^0.10.1
+  # Remote API
+  data_connection_checker: ^0.3.4
+  http: ^0.12.0+2
+  # Local cache
+  shared_preferences: ^0.5.3+4
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: ^5.0.16
+
+
+  flutter_lints: ^1.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
