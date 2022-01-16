@@ -3,9 +3,9 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
-import 'package:tdd/core/error/exceptions.dart';
-import 'package:tdd/features/number_trivia/data/datasources/number_trivia_remote_data_source.dart';
-import 'package:tdd/features/number_trivia/data/models/number_trivia_model.dart';
+import 'package:tdd/src/core/error/exceptions.dart';
+import 'package:tdd/src/features/number_trivia/data/datasources/number_trivia_remote_data_source.dart';
+import 'package:tdd/src/features/number_trivia/data/models/number_trivia_model.dart';
 
 import '../../../../fixtures/fixture_reader.dart';
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tdd/features/number_trivia/presentation/Pages/number_trivia_page.dart';
-import 'config/routes/app_routes.dart';
-import 'config/themes/app_themes.dart';
-import 'core/network/network_info.dart';
-import 'injection_container.dart' as dependency_injection;
+import 'package:tdd/src/features/number_trivia/presentation/Pages/number_trivia_page.dart';
+import 'src/config/routes/app_routes.dart';
+import 'src/config/themes/app_themes.dart';
+import 'src/core/network/network_info.dart';
+import 'src/injection_container.dart' as dependency_injection;
  main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await dependency_injection.init();

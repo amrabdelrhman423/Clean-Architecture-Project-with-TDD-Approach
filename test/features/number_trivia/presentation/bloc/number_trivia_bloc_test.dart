@@ -1,14 +1,14 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:dartz/dartz.dart';
-import 'package:tdd/core/constants/errors_constants.dart';
-import 'package:tdd/core/error/failures.dart';
-import 'package:tdd/core/usecases/usecase.dart';
-import 'package:tdd/core/utils/input_converter.dart';
-import 'package:tdd/features/number_trivia/domain/entities/number_trivia.dart';
-import 'package:tdd/features/number_trivia/domain/usecases/get_concrete_number.dart';
-import 'package:tdd/features/number_trivia/domain/usecases/get_random_number_trivia.dart';
-import 'package:tdd/features/number_trivia/presentation/bloc/number_trivia_bloc.dart';
+import 'package:tdd/src/config/constants/errors_constants.dart';
+import 'package:tdd/src/core/error/failures.dart';
+import 'package:tdd/src/core/usecases/usecase.dart';
+import 'package:tdd/src/core/utils/input_converter.dart';
+import 'package:tdd/src/features/number_trivia/domain/entities/number_trivia.dart';
+import 'package:tdd/src/features/number_trivia/domain/usecases/get_concrete_number.dart';
+import 'package:tdd/src/features/number_trivia/domain/usecases/get_random_number_trivia.dart';
+import 'package:tdd/src/features/number_trivia/presentation/bloc/number_trivia_bloc.dart';
 
 class MockGetConcreteNumberTrivia extends Mock
     implements GetConCreteNumberTrivia {}

@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:tdd/features/number_trivia/data/models/number_trivia_model.dart';
-import 'package:tdd/features/number_trivia/domain/entities/number_trivia.dart';
-import 'package:tdd/features/number_trivia/domain/repositores/number_trivia_repository.dart';
+import 'package:tdd/src/features/number_trivia/data/models/number_trivia_model.dart';
+import 'package:tdd/src/features/number_trivia/domain/entities/number_trivia.dart';
+import 'package:tdd/src/features/number_trivia/domain/repositores/number_trivia_repository.dart';
 
 import '../../../../fixtures/fixture_reader.dart';
 
