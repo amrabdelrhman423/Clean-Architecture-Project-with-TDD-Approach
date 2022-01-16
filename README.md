@@ -24,12 +24,31 @@ Dependency inversion principle is the last of the SOLID principles. It basically
 ### Data layer
  The data layer consists of a Repository implementation (the contract comes from the domain layer) and data sources - one is usually for getting remote (API) data and the other for caching that data. Repository is where you decide if you return fresh or cached data, when to cache it and so on.
 
+![clean](https://github.com/amrabdelrhman423/Clean-Architecture-Project-with-TDD-Approach/blob/master/images/clean.png)
 
 
-## Use
+## Usage
 
 TDD Cycle is also known as the RED-GREEN-REFACTOR CYCLE: is when a developer writes a failing automated test case, then produces the simplest code needed to pass that test, refactors the code until it meets acceptable standards.
 
 
 ![clean](https://github.com/amrabdelrhman423/Clean-Architecture-Project-with-TDD-Approach/blob/master/images/tdd.png)
+
+#### Steps used in TDD:
+1-Add a test
+
+2-Write the code
+
+3-Refactor code
+
+
+
+## references
+[Bob Martin – The Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+
+[CodingWithMitch – 2 Key Concepts of Clean Architecture](https://www.youtube.com/watch?v=NyJLw3sc17M)
+
+[Testing Driven Development](https://runtimerec.com/blog/post-2/)
+
+[Ian Cooper, The Clean Architecture](https://www.youtube.com/watch?v=SxJPQ5qXisw)
 
