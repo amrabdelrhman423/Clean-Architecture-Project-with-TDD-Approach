@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tdd/features/number_trivia/presentation/Pages/number_trivia_page.dart';
+import 'config/routes/app_routes.dart';
 import 'config/themes/app_themes.dart';
 import 'core/network/network_info.dart';
 import 'injection_container.dart' as dependency_injection;
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       title: 'Clean Architecture Flutter ',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
+      onGenerateRoute: AppRoutes.onGenerateRoutes,
       home: NumberTriviaPage(),
     );
   }

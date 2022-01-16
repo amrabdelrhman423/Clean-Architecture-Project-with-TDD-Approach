@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:tdd/core/constants/keys_constans.dart';
+import 'package:tdd/config/constants/keys_constans.dart';
 import 'package:tdd/core/error/exceptions.dart';
 import 'package:tdd/features/number_trivia/data/models/number_trivia_model.dart';
 

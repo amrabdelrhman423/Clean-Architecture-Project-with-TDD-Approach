@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:tdd/core/constants/errors_constants.dart';
+import 'package:tdd/config/constants/errors_constants.dart';
 import 'package:tdd/core/error/failures.dart';
 import 'package:tdd/core/usecases/usecase.dart';
 import 'package:tdd/core/utils/input_converter.dart';

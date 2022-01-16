@@ -14,54 +14,65 @@ class TriviaControls extends StatefulWidget {
 class _TriviaControlsState extends State<TriviaControls> {
   final controller = TextEditingController();
   String inputStr;
+  final _formkey=GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        TextField(
-          controller: controller,
-          keyboardType: TextInputType.number,
-          decoration: InputDecoration(
-            border: OutlineInputBorder(),
-            hintText: 'Input a number',
+    return Form(
+      key: _formkey,
+      child: Column(
+        children: <Widget>[
+          TextFormField(
+            controller: controller,
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'Input a number',
+            ),
+            onChanged: (value) {
+              inputStr = value;
+            },
+            validator: (value) {
+              if(value.isEmpty ){
+                return "the number is empty";
+              }
+            },
+            onFieldSubmitted: (_) {
+              dispatchConcrete();
+            },
           ),
-          onChanged: (value) {
-            inputStr = value;
-          },
-          onSubmitted: (_) {
-            dispatchConcrete();
-          },
-        ),
-        SizedBox(height: 10),
-        Row(
-          children: <Widget>[
-            Expanded(
-              child: RaisedButton(
-                child: Text('Search'),
-                color: Theme.of(context).accentColor,
-                textTheme: ButtonTextTheme.primary,
-                onPressed: dispatchConcrete,
+          SizedBox(height: 10),
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: RaisedButton(
+                  child: Text('Search'),
+                  color: Theme.of(context).accentColor,
+                  textTheme: ButtonTextTheme.primary,
+                  onPressed: dispatchConcrete,
+                ),
               ),
-            ),
-            SizedBox(width: 10),
-            Expanded(
-              child: RaisedButton(
-                child: Text('Get random trivia'),
-                onPressed: dispatchRandom,
+              SizedBox(width: 10),
+              Expanded(
+                child: RaisedButton(
+                  child: Text('Get random trivia'),
+                  onPressed: dispatchRandom,
+                ),
               ),
-            ),
-          ],
-        )
-      ],
+            ],
+          )
+        ],
+      ),
     );
   }
 
   void dispatchConcrete() {
     // Clearing the TextField to prepare it for the next inputted number
-    controller.clear();
-    BlocProvider.of<NumberTriviaBloc>(context)
-        .add(GetTriviaForConcreteNumber(inputStr));
+   if(_formkey.currentState.validate()){
+     controller.clear();
+     BlocProvider.of<NumberTriviaBloc>(context)
+         .add(GetTriviaForConcreteNumber(inputStr));
+   }
   }
 
   void dispatchRandom() {
