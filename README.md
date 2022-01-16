@@ -52,3 +52,4 @@ TDD Cycle is also known as the RED-GREEN-REFACTOR CYCLE: is when a developer wri
 
 [Ian Cooper, The Clean Architecture](https://www.youtube.com/watch?v=SxJPQ5qXisw)
 
+[Reso Coder ](https://resocoder.com/2019/08/27/flutter-tdd-clean-architecture-course-1-explanation-project-structure/#t-1642330324035)
